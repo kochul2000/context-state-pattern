@@ -1,0 +1,13 @@
+# for dev test
+version: '3'
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: app-image
+    volumes:
+      # For development, the code is mounted instead of being copied to avoid duplication.
+      # If deploying with Docker, the code should be copied.
+      - ./app/:/opt/app/:ro
