@@ -1,7 +1,8 @@
 # context-state-pattern
-for Raspberry Pi Controller with State Design Pattern
+for Raspberry Pi Controller with State Design Pattern.
 
 ## Overview
+The implementation of the State Design Pattern in this project is based on the example provided at [Refactoring Guru](https://refactoring.guru/design-patterns/state/python/example).
 This repository contains a controller application for Raspberry Pi, structured around the State design pattern to efficiently manage different operational states. Designed to address various concerns, the application is divided into multiple services, each maintaining its own context and capable of transitioning through multiple states. This setup is ideal for managing complex control logic in a modular and scalable way.
 
 ## Features
