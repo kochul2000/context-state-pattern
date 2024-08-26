@@ -79,7 +79,7 @@ class Context(ABC):
             except Exception as e:  # noqa
                 if DEBUG:
                     print(f"Error: {e}")
-                self._state = self.initial_state_class()
+                self.transition_to(self.initial_state_class())
             time.sleep(loop_interval or self.loop_interval)
 
         self.on_shutdown()
